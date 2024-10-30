@@ -1,0 +1,122 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+.mobileShow {display: none;} 
+
+/* Smartphone Portrait and Landscape */ 
+@media only screen 
+    and (min-device-width : 320px) /*Revisar*/
+    and (max-device-width : 480px){ 
+    .mobileShow {display: inline;}
+}
+
+.whatsapp-icon-right{
+    width: 70px;
+    right:0px;
+    bottom:0px;
+    display: block;
+    position: fixed;
+    margin-bottom:16px; 
+    margin-right:16px;
+    z-index: 2147482999;
+}
+
+.whatsapp-icon-left{
+    width: 70px;
+    left:0px;
+    bottom:0px;
+    display: block;
+    position: fixed;
+    margin-bottom:16px; 
+    margin-left:16px;
+    z-index: 2147482999;
+}
+
+#iw-ws-call-to-action-right {
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px!important;
+    line-height: 24px!important;
+    font-weight: 400;
+    position: fixed;
+    z-index: 2147482999;
+    /*cursor: pointer;*/
+    background-color: #fff;
+    color: #666;
+    padding: 7px 10px;
+    border-radius: .625rem !important;
+    white-space: normal;
+    text-overflow: ellipsis;
+    max-width: 300px;
+    margin: 0px 15px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
+    animation: launcher-frame-appear 0.25s ease forwards;
+    bottom: 30px;
+    right: 80px;
+    /*display: none;*/
+
+}
+
+#iw-ws-call-to-action-left {
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px!important;
+    line-height: 24px!important;
+    font-weight: 400;
+    position: fixed;
+    z-index: 2147482999;
+    /*cursor: pointer;*/
+    background-color: #fff;
+    color: #666;
+    padding: 7px 10px;
+    border-radius: .625rem !important;
+    white-space: normal;
+    text-overflow: ellipsis;
+    max-width: 300px;
+    margin: 0px 15px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
+    animation: launcher-frame-appear 0.25s ease forwards;
+    bottom: 30px;
+    left: 80px;
+    /*display: none;*/
+
+}
+
+/*Right*/
+#iw-ws-call-to-action-right:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -15px;
+    bottom: 10px;
+    top: auto;
+    border: 8px solid;
+    border-color: transparent transparent transparent #fff;
+}
+
+
+#iw-ws-call-to-action-left:before {
+    
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -15px;
+    bottom: 10px;
+    top: auto;
+    border: 8px solid;
+    border-color: transparent #fff transparent transparent;
+    
+}
+
+#iw-ws-call-to-action-inner {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 75px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
